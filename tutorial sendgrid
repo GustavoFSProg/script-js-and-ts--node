@@ -1,0 +1,8 @@
+curl --request POST \
+--url https://api.sendgrid.com/v3/mail/send \
+--header 'authorization: Bearer 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' \
+--header 'content-type: application/json' \
+--data '{"personalizations":[{"to":[{"email":"gustavosohne38@gmail.com","name":"Gustavo FS"}],
+"subject":"Hello, World!"}],"content": [{"type": "text/plain", "value": "Heya!"}],
+"from":{"email":"gustavosohne38@gmail.com","name":"Eu Name"},
+"reply_to":{"email":"gustavo.prog40@gmail.com","name":"Sam Smith"}}'
